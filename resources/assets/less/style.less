@@ -1,0 +1,40 @@
+
+@import 'bower_components/bootstrap-less/less/bootstrap.less';
+
+@import 'typography.less';
+
+
+/*************************************
+	Custom styles
+**************************************/
+.page-title{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#filter-label{
+	line-height: 20px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+table.table.monthly-report-table{
+	td{
+		text-align: right;
+	}
+	td.report-table-name-label{
+		text-align: left;		
+	}
+
+}
+
+.button-small-top-margin{
+	margin-top: 20px;
+}
+
+/****************************************
+	Override Bootstrap Print weirdness
+*****************************************/
+@media print{
+	a[href]:after{
+		content: none;
+	}
+}
